@@ -36,13 +36,14 @@ public class binarySearchTest {
         //int[] list = new int[number];                               //O(1) time
         int low = 1;
         int high = number;
-        int mid;
+        int mid = 0;
         int midSquare;
         int runs = 0;
         System.out.println("Running Binary Root");
 
         while(low < high) {
             System.out.println("run " + runs);
+
             mid = (high + low)/2;
             midSquare = mid * mid;
             System.out.println(mid);
@@ -61,13 +62,12 @@ public class binarySearchTest {
     }
 
 
-
     public static void main(String[] args) {
        int[] numList = {5,7,10,15,17,1,2};
 
        binarySearchTest test = new binarySearchTest();
         //System.out.println(test.binarySearch(numList, 17));
 
-        System.out.println(test.binaryRoot(49));
+        System.out.println(test.binaryRoot(144));
     }
 }
