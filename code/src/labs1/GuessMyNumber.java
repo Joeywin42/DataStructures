@@ -42,7 +42,7 @@ public class GuessMyNumber {
                 } else if (response.equals("L")){
                     floor = number;
                 } else continue;
-                //continue 
+                //continue
 
                 System.out.println(floor + " " + ceiling + " " +number);
                 number = (int) Math.ceil((floor + ceiling)/2.0);
