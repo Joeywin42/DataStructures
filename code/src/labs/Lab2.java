@@ -25,7 +25,6 @@ public class Lab2 {
         for (int num: list) {
             number += num;
         }
-
         //convert String plus one to an int;
         return (Integer.parseInt(number) + 1);
     }
