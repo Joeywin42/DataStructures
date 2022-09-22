@@ -16,12 +16,22 @@ public class ClassStuff2 {
         return climber(1, stairPosition, height) + climber(2, stairPosition, height);
     }
     //fibonachi DO Later
+    public int fibonach(int num){
+        if(num <= 1){
+            return num;
+        }
+        return fibonach(num - 1) + fibonach(num - 2);
+    }
+
     public static void main(String[] args) {
         ClassStuff2 test = new ClassStuff2();
 
         int steps = test.climber(0,0,5);
 
         System.out.println("Number of steps is " + steps);
+
+        System.out.println("Fibo weebo");
+        System.out.println(test.fibonach(10));
 
     }
 

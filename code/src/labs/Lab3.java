@@ -18,7 +18,7 @@ public class Lab3 {
 
     //Rotates array by 90 degree: Using a 1d Array space complexity: O(n);
     public  int[][] rotaryDevice1D(int[][] list){
-        //make 1d array
+        //make into 1d array
         var dDArray = Arrays.stream(list).flatMapToInt(Arrays::stream).toArray();
         //manipulate 1dArray o(n)
         int countRow = list.length-1;
