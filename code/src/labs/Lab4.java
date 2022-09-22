@@ -1,9 +1,6 @@
 package labs;
 
-import java.nio.file.Path;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Enumeration;
 
 public class Lab4 {
     //runs both the methods in order to sort the array and than deduplicate it
