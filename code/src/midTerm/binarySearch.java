@@ -22,19 +22,12 @@ public class binarySearch {
         return -1;
     }
 
-
-
     public static void main(String[] args) {
         binarySearch test = new binarySearch();
         int[] testList = {11, 21, 33, 40, 50};
         //target is 21
 
         System.out.println(test.binarySearch(testList, 21, 0, testList.length));
-
-
-
-
-
 
     }
 }

@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class quickSort {
 
-
     //OnLogn Sorting algorithm
     public void quickSort(int list[], int begin, int end) {
         if (begin < end) {
@@ -44,10 +43,6 @@ public class quickSort {
         return i+1;
     }
 
-
-
-
-
     public static void main(String[] args) {
         quickSort test = new quickSort();
         int[] testList = {50, 11, 33, 21, 40, 50, 40, 40, 21};
@@ -58,8 +53,6 @@ public class quickSort {
         //Print the sorted array
 
         Arrays.stream(testList).forEach(num -> System.out.print(num + " "));
-
-
 
     }
 }
