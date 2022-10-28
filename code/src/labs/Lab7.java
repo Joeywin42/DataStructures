@@ -5,11 +5,11 @@ public class Lab7 {
     private class Node{
         int data;
         Node next;
-
         public Node(int data){
             this.data = data;
             this.next = null;
         }
+
     }
 
     public Node head = null;
@@ -33,7 +33,7 @@ public class Lab7 {
         }
     }
 
-    //O(N deletion)
+    //O(N deletion) O(1) Space
     public void deleteNode(int index){
         System.out.println("Running delete Node");
         //pointer that traverses list
@@ -61,8 +61,6 @@ public class Lab7 {
         }
 
     }
-
-
     //give the Object a to String
     @Override
     public String toString() {
@@ -87,6 +85,11 @@ public class Lab7 {
     public static void main(String[] args) {
         //TestCases would be mostly checking if its null, and we can reduce the code require by making that method.
         //and sticking it everywhere
+        //this can be achieved with
+//        if (head == null){
+//            return "This list is empty";
+//        }
+
         //50,11,33,21,40,71
         Lab7 test = new Lab7();
         //Test is the linked list
