@@ -19,6 +19,7 @@ public class Assignment2 {
     //O(n) space and O(n) time for calculations
     public int calculate(String expression){
         //turn the expression into the stacks
+        testCases(expression);
         converter(expression);
         int temp = 0;
         //calculations
@@ -26,8 +27,9 @@ public class Assignment2 {
             temp = operands.pop();
             operands.push(calc(temp, operands.pop(), operaters.pop()));
 
-            System.out.println("\n" + operands);
-            System.out.println(operaters);
+            //Process of calculations.
+            System.out.println("\n" + operands + " :Operand List process");
+            System.out.println(operaters + " :Operator List process");
         }
 
         return operands.pop();
@@ -60,8 +62,8 @@ public class Assignment2 {
             }
         }
         //prints the converted list for debugging
-        System.out.println(operands);
-        System.out.println(operaters);
+        System.out.println(operands + " :operands total List");
+        System.out.println(operaters + " :operators total List");
     }
     //abstracted the calculations
     private int calc(int operand1, int operand2, String operator){
@@ -81,7 +83,7 @@ public class Assignment2 {
 
         String expression = "10 * 2 - 15";
 
-        System.out.println(tester.calculate(expression));
+        System.out.println(tester.calculate(expression) + " :Answer");
 
 //        There is several test cases at the very top of the code and inside the converter method for empty arrays
 //        and illegal arguments.
