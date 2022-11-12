@@ -65,7 +65,7 @@ public class Lab11 {
         if (root == null){
             throw new IllegalArgumentException("The list empty not a BST");
         }
-        
+
 
         //inorder is O(n) time and space
         inOrderTraversal(root);
