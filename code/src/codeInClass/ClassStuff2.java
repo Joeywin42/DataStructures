@@ -1,5 +1,7 @@
 package codeInClass;
 
+import java.util.ArrayList;
+
 public class ClassStuff2 {
 
     //clibing stairs time complexity O(2^n): space complexity is recursion

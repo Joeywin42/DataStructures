@@ -14,7 +14,6 @@ public class Assignment2 {
         if (expression.isBlank()){
             throw new IllegalArgumentException("This String is way to small for this calculator");
         }
-
     }
     //O(n) space and O(n) time for calculations
     public int calculate(String expression){
@@ -31,7 +30,6 @@ public class Assignment2 {
             System.out.println("\n" + operands + " :Operand List process");
             System.out.println(operaters + " :Operator List process");
         }
-
         return operands.pop();
     }
     //turn the expression into the operator and operands stack becoming in o(n) time complexity
@@ -84,6 +82,7 @@ public class Assignment2 {
         String expression = "10 * 2 - 15";
 
         System.out.println(tester.calculate(expression) + " :Answer");
+
 
 //        There is several test cases at the very top of the code and inside the converter method for empty arrays
 //        and illegal arguments.
