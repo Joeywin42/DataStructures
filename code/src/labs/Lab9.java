@@ -80,7 +80,7 @@ public class Lab9 {
 
 
         //In order to make the code I had to already have implemented several test cases like checking for null or a list
-        // of one. Also the main method has the test.
+        // of one.
 
     }
 

@@ -1,9 +1,5 @@
 package assignments;
 
-import labs.Lab11;
-
-import java.lang.management.GarbageCollectorMXBean;
-
 public class Assignment3 {
     class Node{
         int data;

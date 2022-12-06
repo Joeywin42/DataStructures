@@ -47,7 +47,7 @@ public class Lab10 {
             tree.push(rootPointer);
 
             //iterates until queue is empty Checks left node than right node adding to queue each step.
-            //Then pops into the next left and right.
+            //than pops into the next left and right.
             while (!tree.isEmpty()) {
                 //pointer for less writing.
                 var tempN = tree.pop();
